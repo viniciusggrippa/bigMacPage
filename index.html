@@ -1,0 +1,105 @@
+<!-- Página criada utilizando os aprendizados do curso Responsive Web Design, do site freeCodeCamp.com -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+        <style>
+
+            :root {
+                --amarelo: #ffc82d;
+                --vermelho: #d3222a;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            [type='radio'] {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            [type='checkbox'] {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                background-color: var(--vermelho);
+                color: var(--amarelo);
+                font-size: 32px;
+                font-family: 'Otomanopee One';
+                padding: 15px;
+                margin: 0;
+            }
+
+            main {
+                padding: 15px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="texto-amarelo">McDonald’s</h1>
+
+        <main>
+
+            <a href="https://www.mcdonalds.com.br/cardapio/classicos/big-mac"><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXCTbnv/200/200/original?country=br" alt="Imagem de um Big Mac"></a>
+            <h2>Big Mac</h2>
+            <p>Não existe nada igual. Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim. O sabor de McDonald’s triplamente delicioso. Com dois hambúrgueres de carne 100% bovina, queijo derretido, cebola, picles, ketchup e mostarda. Confira mais em <a href="#">McDonald’s</a></p>
+
+            <p>Esse produto contém:</p>
+            <ul>
+                <li>Ovo</li>
+                <li>Leite</li>
+                <li>Glúten</li>
+                <li>Lactose</li>
+                <li>Soja</li>
+            </ul>
+
+            <form action="#">
+                <input type="text" placeholder="Insira o cupom de desconto">
+                <button type="submit">Resgatar Código</button>
+
+                <br>
+
+                <label for="batataP">
+                    <input type="radio" id="batataP" name="batataFrita" value="batataPequena">Batata Pequena
+                </label>
+                <label for="batataM">
+                    <input type="radio" id="batataM" name="batataFrita" value="batataMedia" checked>Batata Média
+                </label>
+                <label for="batataP">
+                    <input type="radio" id="batataG" name="batataFrita" value="BatataGrande">Batata Grande
+                </label>
+
+                <br>
+
+                <label for="bebidaP">
+                    <input type="radio" id="bebidaP" name="bebida" value="bebidaPequena">Bebida Pequena
+                </label>
+                <label for="bebidaM">
+                    <input type="radio" id="bebidaM" name="bebida" value="bebidaMedia" checked>Bebida Média
+                </label>
+                <label for="bebidaG">
+                    <input type="radio" id="bebidaG" name="bebida" value="BebidaGrande">Bebida Grande
+                </label>
+
+                <p>Adicionais:
+                    <label for="bacon">
+                        <input type="checkbox" id="bacon" name="adicional" value="bacon">Bacon
+                    </label>
+                    <label for="cheddar">
+                        <input type="checkbox" id="cheddar" name="adicional" value="cheddar">Cheddar
+                    </label>
+                    <label for="picles">
+                        <input type="checkbox" id="picles" name="adicional" value="picles">Picles
+                    </label>
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
